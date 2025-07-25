@@ -129,8 +129,208 @@ html, body {
     margin: 0;
     width: 100%;
 }
+.flower-lover-section{
+    margin: 200px auto 150px;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.flower-lover-image{
+    display: flex;
+}
+
+.trusted-badge{
+    height: 286px;
+    width: 286px;
+    margin: -143px
+}
+.flower-lover-detailes{
+    max-width: 540px;
+    margin-left: 60px;
+}
+
+.flower-lover-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.flower-lover-detailes ul li{
+    font-size: 22px;
+    color: #000000;
+    opacity: 50%;
+}
+
+.latest-deals{
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+.latest-deal-title{
+    font-size: 50px;
+    font-weight: bold;
+
+}
+.latest-deal-subtitle{
+    font-size: 22px;
+    color: #000000;
+    opacity: 50%;
+}
+
+.latest-image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.latest-deal-left-image{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+.left-image{
+     position: relative;
+    max-width: 367px;
+    width: 100%;
+   
+    
+    
+
+}
+.left-image img{
+    border-radius: 14px;  
+}
+
+.image-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin-top: 0;
+    
+    
+}
+.image-content h2,a{
+    color: white;
+    
+}
 
 
+.rigth-image{
+    position: relative;
+    max-width: 753px;
+    width: 100%;
+}
+.rigth-image img{
+    border-radius: 22px;
+}
+.image-content1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+.image-content1 h2,a{
+    color: white;
+}
+.join-section{
+    position: relative;
+    width: 100%;
+    margin-top: 120px;
+    
+}
+.join-section img{
+    width: 100%;
+    display: block;
+}
+.join-section-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    
+    
+
+}
+
+
+.join-section-headline{
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+    
+    text-align: center;
+    
+    
+}
+.form{
+    display: flex;
+}
+
+.form input{
+    width: 644px;
+    
+    height: 48px;
+    border: none;
+    
+}
+.form button{
+    height: 50px;
+    width: 186px;
+    
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    
+}
+
+.footer-section{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto 50px;
+    background-color:#FFFFFF;
+    max-width: 1300px;
+    align-items: flex-start;
+}
+.footer-subtitle{
+    color: #000000;
+    opacity: 50%;
+    font-size: 22px;
+    font-weight: normal;
+}
+.div2 ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 32px;
+    list-style: none;
+    
+}
+
+.div2 a{
+    color: black;
+    text-decoration: none;
+    color: #6B7280;
+}
+
+.div1{
+    max-width: 359px;
+}
+
+
+
+
+.div3{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
 
 
 @media screen and (max-width:576px) {
@@ -152,9 +352,11 @@ html, body {
     .banner{
         flex-direction: column-reverse;
         
+        
     }
     .banner-content{
         margin: 0 16px;
+        text-align: left;
     }
 
     .banner-title{
@@ -185,5 +387,75 @@ html, body {
         font-size: 16px;
         padding: 19px 28px;
     }
+    .flower-lover-section{
+        flex-direction: column;
+        margin: 50px 0 0 0;
+        }
+        .trusted-badge{
+            display: none;
+        }
+        .flower-store{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .flower-lover-detailes{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+        .latest-deals{
+            margin-top: 200px;
+        }
+        .latest-image{
+            flex-direction: column;
+        }
+        .left-image img{
+            width: 100%;
+            
+        }
+        .latest-deal-left-image{
+            gap: 0;
+        }
+        .rigth-image img{
+            width: 100%;
+        }
+        .rigth-image{
+            width: 367px;
+        }
+        .join-section img{
+            
+            width: 100%;
+
+        }
+        .form{
+            display: flex;
+        }
+        .form input{
+            width: 218px;
+
+        }
+        .form button{
+            width: 103px;
+
+        }
+        .join-section-headline{
+            font-size: 16px;
+        }
+        .footer-section{
+            flex-direction: column;
+            margin: 50px 20px;
+        }
+        .div2{
+            margin: 50px 0;
+        }
+        .div2 ul{
+            grid-template-columns: repeat(1,1fr);
+            padding: 0;
+            margin:  0;
+            
+        }
+
 
 }
